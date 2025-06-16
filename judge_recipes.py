@@ -70,7 +70,7 @@ recipe_dataset = Dataset[CustomerOrder, Recipe, Any](
         LLMJudge(
             rubric='Recipe should have clear steps and relevant ingredients',
             include_input=True,
-            model='anthropic:claude-3-7-sonnet-latest',  
+            model='openai:gpt-4o',  
         ),
     ],
 )
